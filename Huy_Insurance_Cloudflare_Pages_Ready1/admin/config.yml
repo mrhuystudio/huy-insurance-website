@@ -5,14 +5,14 @@ backend:
   branch: main
   base_url: https://huy-insurance-oauth.mrhuystudio.workers.dev
   auth_endpoint: auth
-media_folder: assets/uploads
+media_folder: Huy_Insurance_Cloudflare_Pages_Ready1/assets/uploads
 public_folder: /assets/uploads
 publish: true
 collections:
   - name: posts
     label: Blog articles
     label_singular: Article
-    folder: content/posts
+    folder: Huy_Insurance_Cloudflare_Pages_Ready1/content/posts
     create: true
     extension: json
     format: json
