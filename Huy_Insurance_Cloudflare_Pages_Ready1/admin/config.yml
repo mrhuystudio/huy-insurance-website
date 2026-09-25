@@ -3,8 +3,8 @@ backend:
   name: github
   repo: mrhuystudio/huy-insurance-website
   branch: main
-  # base_url: https://YOUR_SECURE_OAUTH_WORKER_DOMAIN
-  # auth_endpoint: auth
+  base_url: https://huy-insurance-oauth.mrhuystudio.workers.dev
+  auth_endpoint: auth
 media_folder: assets/uploads
 public_folder: /assets/uploads
 publish: true
