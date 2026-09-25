@@ -1,7 +1,7 @@
 # IMPORTANT: Set repo and OAuth base_url before admin login can work.
 backend:
   name: github
-  repo: REPLACE_GITHUB_USERNAME/huy-insurance
+  repo: mrhuystudio/huy-insurance-website
   branch: main
   # base_url: https://YOUR_SECURE_OAUTH_WORKER_DOMAIN
   # auth_endpoint: auth
