@@ -1,0 +1,32 @@
+# IMPORTANT: Set repo and OAuth base_url before admin login can work.
+backend:
+  name: github
+  repo: REPLACE_GITHUB_USERNAME/huy-insurance
+  branch: main
+  # base_url: https://YOUR_SECURE_OAUTH_WORKER_DOMAIN
+  # auth_endpoint: auth
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish: true
+collections:
+  - name: posts
+    label: Blog articles
+    label_singular: Article
+    folder: content/posts
+    create: true
+    extension: json
+    format: json
+    identifier_field: slug
+    slug: "{{slug}}"
+    fields:
+      - {label: Slug (URL), name: slug, widget: string, pattern: ['^[a-z0-9-]+$', 'Lowercase letters, numbers and hyphens only']}
+      - {label: Published, name: published, widget: boolean, default: false}
+      - {label: Publication date, name: date, widget: datetime, format: YYYY-MM-DD}
+      - {label: Category, name: category, widget: select, options: ['Medicare','Health & ACA','Auto Insurance','Home Insurance','Life Insurance','Annuities','Commercial Insurance','Agency News']}
+      - {label: Featured image, name: image, widget: image, required: false}
+      - {label: English title, name: title_en, widget: string}
+      - {label: Vietnamese title, name: title_vi, widget: string}
+      - {label: English summary, name: summary_en, widget: text}
+      - {label: Vietnamese summary, name: summary_vi, widget: text}
+      - {label: English article, name: body_en, widget: text}
+      - {label: Vietnamese article, name: body_vi, widget: text}
